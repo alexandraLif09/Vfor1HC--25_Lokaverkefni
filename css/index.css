@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    border-bottom: 2px solid #6aaed6;
+    padding: 8px 20px;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav button {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    border: 2px solid #000;
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #d1c4e9;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.TamagotchiMynd img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.utskyring {
+    border: 2px solid #000;
+    padding: 15px;
+}
+
+.utskyring p {
+    margin-bottom: 15px;
+}
+
+.leidbeiningar a {
+    color: purple;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.leidbeiningar a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+
+    main > div {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .TamagotchiMynd,
+    .utskyring {
+        width: 50%;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+}
